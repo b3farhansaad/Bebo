@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #19203f 0%, #0b101f 55%, #03050d 100%);
+  color: #f7f8ff;
+}
+
+body {
+  padding: 24px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  line-height: 1.02;
+}
+
+.hero p {
+  margin: 12px 0 0;
+  color: #c9d2ff;
+  font-size: 1.05rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(106, 142, 255, 0.18);
+  color: #b5d2ff;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.plan-list,
+.config-panel,
+.summary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 26px;
+}
+
+.plan-card {
+  border-radius: 24px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+}
+
+.plan-card.active,
+.plan-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 133, 255, 0.56);
+}
+
+.plan-card h3 {
+  margin: 0 0 10px;
+}
+
+.plan-card p {
+  margin: 0 0 16px;
+  color: #c8d2ff;
+}
+
+.plan-card strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.config-panel label {
+  display: block;
+  margin-bottom: 10px;
+  color: #a6b1ff;
+  font-weight: 700;
+}
+
+.field {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f1f5ff;
+}
+
+.range-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.range-card h4 {
+  margin: 0 0 6px;
+}
+
+.range-card p {
+  margin: 0 0 16px;
+  color: #c8d2ff;
+}
+
+.range-card input[type='range'] {
+  width: 100%;
+}
+
+.summary strong,
+.summary span {
+  display: block;
+}
+
+.summary strong {
+  font-size: 1.3rem;
+  margin-top: 8px;
+}
+
+.summary .btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #5d8cff, #82b1ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.jexactyl-card {
+  margin-top: 24px;
+  padding: 26px;
+  border-radius: 28px;
+  background: rgba(9, 16, 36, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.jexactyl-card h2 {
+  margin: 0 0 14px;
+}
+
+.jexactyl-card p {
+  margin: 8px 0;
+  color: #c4d1ff;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 860px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

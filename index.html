@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bebo Hosting - استضافات أسطورية</title>
+    <meta
+      name="description"
+      content="موقع استضافات خرافي لاختيار الخطط، الموارد، اللغة، والدومين بسهولة."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <span class="badge">استضافات أسطورية</span>
+        <h1>اختر استضافتك وخططك بسهولة من خلال لوحة تحكم واحدة</h1>
+        <p>خصص الموارد، اختر اللغة أو التقنية، وأدخل الدومين الخاص بك في نفس المكان.</p>
+        <div class="hero-card">
+          <div><strong>الدومين:</strong> <span id="hero-domain">my-site.example.com</span></div>
+          <div><strong>الخطة:</strong> <span id="hero-plan">Business</span></div>
+          <div><strong>اللغة:</strong> <span id="hero-language">React</span></div>
+          <div><strong>السعر الشهري:</strong> <span id="hero-price">$0</span></div>
+        </div>
+      </section>
+
+      <div class="grid grid-2">
+        <section class="plan-list">
+          <h2>اختر خطة استضافة</h2>
+          <div id="plan-list"></div>
+        </section>
+
+        <section class="config-panel">
+          <h2>خصص موارد الاستضافة</h2>
+          <div class="field">
+            <label for="language-select">اللغة أو التقنية</label>
+            <select id="language-select"></select>
+          </div>
+          <div class="field">
+            <label for="domain-input">الدومين</label>
+            <input id="domain-input" type="text" placeholder="example.com" />
+          </div>
+          <div class="range-card">
+            <h4>CPU</h4>
+            <p id="cpu-value">4 أنوية</p>
+            <input id="cpu-range" type="range" min="1" max="16" value="4" />
+          </div>
+          <div class="range-card">
+            <h4>RAM</h4>
+            <p id="ram-value">8 جيجابايت</p>
+            <input id="ram-range" type="range" min="2" max="64" value="8" />
+          </div>
+          <div class="range-card">
+            <h4>التخزين</h4>
+            <p id="storage-value">120 جيجابايت</p>
+            <input id="storage-range" type="range" min="20" max="1000" step="10" value="120" />
+          </div>
+          <div class="range-card">
+            <h4>النطاق</h4>
+            <p id="bandwidth-value">2000 جيجابايت</p>
+            <input id="bandwidth-range" type="range" min="500" max="10000" step="100" value="2000" />
+          </div>
+        </section>
+      </div>
+
+      <section class="summary">
+        <h2>ملخص الاستضافة</h2>
+        <p><strong>الخطة المختارة:</strong> <span id="summary-plan">Business</span></p>
+        <p><strong>الموارد:</strong> <span id="summary-resources">4 CPU · 8GB RAM · 120GB تخزين · 2000GB نطاق</span></p>
+        <p><strong>اللغة:</strong> <span id="summary-language">React</span></p>
+        <p><strong>السعر الإجمالي:</strong> <span id="summary-total">$0</span></p>
+        <button class="btn">احجز استضافتك الآن</button>
+      </section>
+
+      <section class="jexactyl-card">
+        <h2>ربط jExactyl</h2>
+        <p id="jexactyl-description">جاري تحميل بيانات jExactyl...</p>
+        <p>
+          <strong>لوحة jExactyl:</strong>
+          <a id="jexactyl-url" href="#" target="_blank" rel="noreferrer">غير متاحة</a>
+        </p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
